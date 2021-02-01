@@ -36,3 +36,16 @@ export const TextField: React.FC<Props> = ({
         </div>
     )
 }
+
+// <TextField text='hello' person={{firstname: '', lastName: ''}} 
+// handleChange={e => {}}
+// />
+
+// <Counter>
+//     {({ count, setCount }) => (
+//         <div>
+//             {count}
+//             <button onClick={() => setCount(count + 1)}>++</button>
+//         </div>
+//     )}
+// </Counter>

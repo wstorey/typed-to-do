@@ -1,22 +1,15 @@
 import React from 'react';
-import { Counter } from './TestComponents/Count';
-import { TextField } from './TestComponents/Test';
+import { List } from './components/List';
 
 function App() {
     return (
-        // <TextField text='hello' person={{firstname: '', lastName: ''}} 
-        // handleChange={e => {}}
-        // />
-        
-        <Counter>
-            {({ count, setCount }) => (
-                <div>
-                    {count}
-                    <button onClick={() => setCount(count + 1)}>++</button>
-                </div>
-            )}
-        </Counter>
-        
+        <div>
+            <h2>To Do</h2>
+            <List />
+            <hr/>
+            {/* <h2>Completed</h2> */}
+            {/* <List /> */}
+        </div>
     );
 }
 
