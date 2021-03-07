@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Item } from './Item';
 
-interface Item {
+interface ListItem {
     name: string;
     complete: boolean;
     key: number;
 }
 
-interface Items extends Array<Item>{}
+interface ListItems extends Array<ListItem>{}
 
 export const List = () => {
     // const [items, setItems] = useState<Items>([]);
-    const [items, setItems] = useState<Items>([
+    const [items] = useState<ListItems>([
         {name: 'test1', complete: false, key: 1},
         {name: 'test2', complete: false, key: 2},
         {name: 'test3', complete: false, key: 3},
